@@ -14,3 +14,5 @@ chapter1.md \
 chapter2.md \
 ...
 ```
+
+Progit에서 표지를 어떻게 처리했는지 예제를 관찰해보기
