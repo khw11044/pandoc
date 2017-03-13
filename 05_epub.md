@@ -5,7 +5,6 @@ Electronic Publication의 줄임말입니다.
 HTML, CSS, Javascript를 활용해서 제작됩니다.
 Pandoc은 기본 설정이 epub2로 되어있습니다.
 명령어 옵션을 이용해서 epub3을 사용할 수 있습니다.
-epub3의 특징을 알아보겠습니다.
 
 ### Epub3의 특징
 - 오디오와 비디오 지원
