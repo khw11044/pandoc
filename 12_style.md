@@ -1,0 +1,19 @@
+# 스타일 처리하기
+`--epub-stylesheet` 옵션을 사용해서 스타일을 적용할 수 있습니다.
+아래 파일은 E-book에 적용할 스타일 예입니다. CSS 형식을 사용합니다.
+```
+/* This defines styles and classes used in the book */
+body{margin:5%;text-align:justify;font-size:medium;}
+code{font-family:monospace;}
+h1{text-align:left;}
+h2{text-align:left;}
+h3{text-align:left;}
+h4{text-align:left;}
+h5{text-align:left;}
+h6{text-align:left;}
+h1.title{}
+h2.author{}
+h3.date{}
+ol.toc{padding:0;margin-left:1em;}
+ol.tocli{list-style-type:none;margin:0;padding:0;}
+```
