@@ -6,6 +6,7 @@
 - LaTex 문법을 쉽게 익힐 수 있는 곳은 아래 사이트입니다.
 - https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
-### LaTex 설치
-- macOS에서는 아래 사이트를 통해서 쉽게 설치할 수 있습니다.
+### macOS에서 LaTex 설치
+- 용량이 크고 설치가 오래걸리지만 한번에 해결할 수 있습니다.
+- macOS에서는 macTex를 통해서 쉽게 설치할 수 있습니다.
 - http://www.tug.org/mactex/mactex-download.html
