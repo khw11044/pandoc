@@ -1,4 +1,3 @@
-pandoc -S -o test.epub \
-01.Preface.md \
-02.Intro.md \
-03.Install_Pandoc.md
+pandoc -S -o pandoc.epub \
+01_Preface.md \
+02_Introduction.md
