@@ -1,12 +1,6 @@
 # 이 책에서 다루는 내용
-<<<<<<< HEAD:02_Introduction.md
-이책은 Markdown과 Pandoc을 이용해서 E-book을 제작하는 방법에 초점을 맞추어 설명합니다.
-만약 독자가 E-book 또는 Markdown 문서를 제작할 때,
-Git을 이용한다면 문서의 백업과 버전관리에 큰 도움이 됩니다.
-=======
 이책은 Markdown과 Pandoc을 이용해서 E-book을 제작하는 방법을 설명합니다.
 만약 여러분이 Git을 사용할 수 있다면 자료의 백업, 버전관리툴로 굉장히 좋습니다.
->>>>>>> 683a2dda5ee96d3e9be91d8125ce31e8f5c5c674:02_Introduction.md
 
 # 개인적으로 사용해본 문서작성 도구입니다.
 - Troff, Groff, Nroff
@@ -17,33 +11,23 @@ Git을 이용한다면 문서의 백업과 버전관리에 큰 도움이 됩니�
 	- 이미 만들어진 책을 분석하고 일부를 편집하기에 좋습니다.
 	- 개인적으로 책을 쓰기에 실행속도가 느리다고 생각합니다.
 	- Gitbook보다 불편합니다.
-<<<<<<< HEAD:02_Introduction.md
-- [Gitbook](http://www.gitbook.com)
-	- 웹버전은 무척 느립니다. 대신 편집시에 파일이 깨지는 경우는 없었습니다.
-=======
-- MediaWiki
+- [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)
 	- 협업이 가능합니다.
 	- 장기적인 관점에서 DB 및 서버관리가 필요합니다.
 	- 쓰레기 데이터가 생길 가능성이 많습니다. = 지속적인 관리가 필요합니다.
 - HTML
 	- 작성하는 내용보다 Tag의 양이 많습니다.
 	- 내용 작성보다 디자인에 집중하게 되는 경향이 많습니다.
-- Gitbook :
-	- 웹버전은 무척 느립니다. 대신 편집시에 파일이 날라가는 경우가 없었습니다.
->>>>>>> 683a2dda5ee96d3e9be91d8125ce31e8f5c5c674:02_Introduction.md
+- [Gitbook](http://www.gitbook.com)
+	- 웹버전은 무척 느립니다. 대신 편집시에 파일이 깨지는 경우는 없었습니다.
 	- 오프라인 편집기를 사용하면 편리하게 작성할 수 있습니다.
 	- 그러나 오프라인 편집기에서 문서를 잘못 드레그하면 문서가 Topic Bar에서 사라지는 버그가 있습니다. '17.3.14 - 7.0.11버전
 	- 개인적으로 공개 E-book 작성시에는 Gitbook이 좋다고 생각합니다.
 	- Git을 이용하여 버전관리가 되지만 Git의 디테일한 기능을 사용하지 않습니다.
 	- 비공개 책을 작성하는 것은 유료입니다.
 	- 협동이 가능합니다.
-<<<<<<< HEAD:02_Introduction.md
 - Markdown + [Pandoc](http://www.pandoc.org)
 	- Markdown 문법과 Pandoc 명령어를 배워야 합니다.
-=======
-- Markdown + Pandoc
-	- 마크다운 문법과 Pandoc 명령어를 배워야 합니다.
->>>>>>> 683a2dda5ee96d3e9be91d8125ce31e8f5c5c674:02_Introduction.md
 	- 용도에 맞도록 문서를 컨버팅하기 쉽습니다.
 	- Git을 이용해서 버전관리를 할 때 Git의 다양한 기능을 활용할 수 있습니다.
 	- 협동이 가능합니다.
