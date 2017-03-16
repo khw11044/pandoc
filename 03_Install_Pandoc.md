@@ -1,5 +1,5 @@
 # Pandoc이란?
-Pandoc은 Text로 이루어진 문서를 다른 문서로 변환하는 유틸리티입니다.
+Pandoc은 문서를 다른형태의 문서로 변환하는 유틸리티입니다.
 Pandoc의 프로젝트 홈페이지는 [http://pandoc.org](http://pandoc.org) 입니다.
 John Macfarlane[http://johnmacfarlane.net](http://johnmacfarlane.net)가 하스켈 언어를 이용해서 제작했습니다.
 Pandoc 이외에 [http://johnmacfarlane.net/tools.html](http://johnmacfarlane.net/tools.html) 사이트에 방문하면 제작자가 만든 다른 툴들도 구경할 수 있습니다.
