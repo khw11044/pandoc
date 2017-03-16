@@ -31,3 +31,7 @@ pandoc -S -o progit.epub title.txt \
 08-git-and-other-scms/01-chapter8.markdown \
 09-git-internals/01-chapter9.markdown
 ```
+
+#### 현재경로의 모든 md파일을 처리하기.
+    
+	pandoc `ls *.md | sort` -s -o test.epub
