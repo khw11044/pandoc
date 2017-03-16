@@ -15,5 +15,8 @@ Git의 사용법을 다루는 책이며 상당히 좋은 내용입니다.
 macOS에서는 brew를 이용해서 쉽게 설치할 수 있습니다.
 brew가 없다면 [https://brew.sh/index_ko.html](https://brew.sh/index_ko.html) 사이트에서 설치해주세요.
 
-	brew install pandoc
+	$ brew install pandoc
 
+#### 리눅스에에서 yum을 사용하기
+
+	# yum install pandoc
