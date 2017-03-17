@@ -17,6 +17,6 @@ brew가 없다면 [https://brew.sh/index_ko.html](https://brew.sh/index_ko.html)
 
 	$ brew install pandoc
 
-#### 리눅스에에서 yum을 사용하기
+#### 리눅스에서 yum을 이용해서 설치하기
 
 	# yum install pandoc
