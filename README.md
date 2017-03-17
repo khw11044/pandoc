@@ -6,7 +6,8 @@
 #### E-book 퍼블리쉬 방법
 - pandoc을 설치합니다.
 - 이 리포지터리를 clone합니다.
-
-	git clone https://github.com/khw7096/pandoc.git
-	cd pandoc
-	sh publish.sh // epub 파일이 생성됩니다.
+```
+git clone https://github.com/khw7096/pandoc.git
+cd pandoc
+sh publish.sh // epub 파일이 생성됩니다.
+```
