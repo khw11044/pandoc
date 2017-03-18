@@ -51,7 +51,22 @@ $ groff inputfile > output.ps
 	
 	clean:
 		rm -rf $(EXPORT_DIR)
+
+#### Make 활용
+
+	%.html: %.md style.css Makefile
+		pandoc -c style.css -s -f markdown -t html --standalone -o $@ $<
+
+	%.odt: %.md Makefile
+		pandoc --standalone -f markdown -t odt -o $@ $<
+
+	%.pdf: %.md %.odt
+		markdown2pdf -f markdown -o $@ $<
+
+	all: doc.html doc.odt doc.pdf
+
 ## Grip
+책을 작성할 때 날짜, 저자, 퍼블리셔, 라이센스, 언어등을 설정할 수 있습니다.
 - .md 파일을 웹서버를 간단하게 만들고 브라우저를 통해서 볼 수 있다.
 - 프로젝트 : https://github.com/joeyespo/grip
 
