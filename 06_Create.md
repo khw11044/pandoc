@@ -35,8 +35,20 @@ epub 파일을 생성하고 싶다면 아래 스크립트도 사용할 수 있�
     
 	$ pandoc `ls *.md | sort` -s -o test.epub
 
-## Docx 제작하기
-- 만약 상사가 docx 파일을 원한다면...
-- 우리나라는 출판사에서 교정확인을 위해 docx형태를 요청하는 경우도 많이 있습니다.
+## PDF 제작하기
+PDF는 많은 사람들이 사용하는 문서포멧입니다.
+모든 OS에서 문서의 레이아웃이 깨지지 않고, 별도의 소프트웨어 없이 보기 편해서 많이 사용하는 포멧입니다.
+PDF파일을 생성하는 예제는 아래와 같습니다.
 
-	pandoc 01_Preface.md -t docx -s -o test.docx
+	pandoc README.md -f markdown -t latex -s -o README.pdf --latex-engine=xelatex --variable mainfont='Nanum Myeongjo'
+
+TODO:몇가지 옵션에 대해서 설명하기.
+
+## Docx 제작하기
+일반 사용자의 경우 마이크로소프트 오피스 포멧인 docx 파일이 익숙합니다.
+우리나라는 출판사에서 교정확인을 위해 docx형태를 요청하는 경우도 많이 있습니다.
+아래는 docx 파일을 생성하는 예제 입니다.
+
+	$ pandoc 01_Preface.md -t docx -s -o test.docx
+
+
