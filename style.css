@@ -1,9 +1,12 @@
 
 body { margin: 5%; text-align: justify; font-size: 0.7em; }
 code {
+	display: block;
 	font-family: monospace;
 	background-color: #F1F1F1;
-	margin-left: 1em;
+	margin: 1em;
+	padding: 1em;
+	border-radius: 0.4em;
 }
 h1 { text-align: left; font-size: 2em;}
 h2 { text-align: left; font-size: 1.6em;}
