@@ -11,3 +11,7 @@ git clone https://github.com/khw7096/pandoc.git
 cd pandoc
 sh publish.sh // epub 파일이 생성됩니다.
 ```
+
+#### 책에 삽입된 이미지
+- figures 폴더에는 책에 들어가는 삽화 이미지가 존재합니다.
+- 상대경로 작성되어있습니다. Github에서 현재 미리보기 되지 않습니다.
