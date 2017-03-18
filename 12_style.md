@@ -19,3 +19,7 @@ ol.tocli{list-style-type:none;margin:0;padding:0;}
 ```
 
 이미지 하단에 들어가는 주석에 대항하는 스타일은 figcaption 값을 CSS에서 설정하면 됩니다.
+
+
+폰트추가
+	--epub-embed-font
