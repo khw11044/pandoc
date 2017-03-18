@@ -4,6 +4,7 @@ pandoc --toc -S --epub-stylesheet style.css --webtex -t epub3 -o pandoc.epub tit
 03_Install_Pandoc.md \
 04_Markdown.md \
 05_Epub.md \
+06_Create.md \
 10_latex.md \
 11_mathml.md
 
