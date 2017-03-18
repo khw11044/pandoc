@@ -1,6 +1,6 @@
 # Epub
 epub은 Electronic Publication의 줄임말입니다.
-확장자는 `.epub` 을 사용합니다.
+확장자는 .epub 을 사용합니다.
 전자책의 기술표준 포멧입니다.
 실제로 내부를 보면 특별한 기술을 사용하지 않습니다.
 기존에 사용해오던 HTML, CSS, Javascript로 구성되어있습니다.
