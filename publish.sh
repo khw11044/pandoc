@@ -6,6 +6,9 @@ pandoc --toc -S --epub-stylesheet style.css --webtex -t epub3 -o pandoc.epub tit
 05_Epub.md \
 06_Create.md \
 07_Image.md \
-10_latex.md \
-11_mathml.md
+08_Cover.md \
+09_PandocArgv.md \
+10_Math.md \
+11_Style.md \
+12_Reference.md
 
