@@ -23,3 +23,8 @@ ol.tocli{list-style-type:none;margin:0;padding:0;}
 
 폰트추가
 	--epub-embed-font
+
+
+#### Page 나누기
+옵션설명
+	--epub-chapter-level 2

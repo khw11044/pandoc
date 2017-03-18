@@ -1,4 +1,4 @@
-pandoc --toc -S --epub-stylesheet style.css --webtex -t epub3 -o pandoc.epub title.txt \
+pandoc --toc -S --epub-chapter-level 2 --epub-stylesheet style.css --webtex -t epub3 -o pandoc.epub title.txt \
 01_Preface.md \
 02_Introduction.md \
 03_Pandoc.md \
