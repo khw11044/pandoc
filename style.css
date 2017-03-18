@@ -1,6 +1,9 @@
 
 body { margin: 5%; text-align: justify; font-size: medium; }
-code { font-family: monospace; }
+code {
+	font-family: monospace;
+	background-color: #F1F1F1;
+}
 h1 { text-align: left; }
 h2 { text-align: left; }
 h3 { text-align: left; }
