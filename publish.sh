@@ -1,4 +1,4 @@
-pandoc --toc -S --epub-stylesheet style.css -o pandoc.epub title.txt \
+pandoc --toc -S --epub-stylesheet style.css -t epub3 -o pandoc.epub title.txt \
 01_Preface.md \
 02_Introduction.md \
 03_Install_Pandoc.md \

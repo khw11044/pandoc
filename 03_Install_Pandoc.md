@@ -7,6 +7,8 @@ GPL 라이센스를 따르고 있습니다.
 Pandoc을 사용하는 프로젝트중 유명한 프로젝트로 [Progit](https://git-scm.com/book/ko/v2)이 있습니다.
 Git의 사용법을 다루는 책이며 상당히 좋은 내용입니다.
 
+![Pandoc을 이용하면 여러 문서로 변환할 수 있습니다.](figures/mdconverting.svg)
+
 ## Pandoc 설치하기
 아래 사이트에서 사용하고 있는 OS에 맞는 배포판을 다운받으세요.
 [https://github.com/jgm/pandoc/releases](https://github.com/jgm/pandoc/releases)

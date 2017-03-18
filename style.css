@@ -20,3 +20,10 @@ h2.author { text-align: center; font-size: 2em;}
 h3.date { }
 ol.toc { padding: 0; margin-left: 1em; }
 ol.toc li { list-style-type: none; margin: 0; padding: 0; }
+figcaption {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.7em;
+}
