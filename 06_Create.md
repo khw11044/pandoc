@@ -34,3 +34,9 @@ epub3 형태의 아웃풋을 하기 위해서는 아래 옵션이 추가되어�
 epub 파일을 생성하고 싶다면 아래 스크립트도 사용할 수 있습니다.
     
 	$ pandoc `ls *.md | sort` -s -o test.epub
+
+## Docx 제작하기
+- 만약 상사가 docx 파일을 원한다면...
+- 우리나라는 출판사에서 교정확인을 위해 docx형태를 요청하는 경우도 많이 있습니다.
+
+	pandoc 01_Preface.md -t docx -s -o test.docx
