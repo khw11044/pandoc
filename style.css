@@ -1,5 +1,5 @@
 
-body { margin: 5%; text-align: justify; font-size: 0.7em; }
+body { margin: 5%; text-align: justify; font-size: 1em; }
 code {
 	display: block;
 	font-family: monospace;
@@ -7,13 +7,14 @@ code {
 	margin: 1em;
 	padding: 1em;
 	border-radius: 0.4em;
+	font-size: 0.9em;
 }
-h1 { text-align: left; font-size: 2em;}
-h2 { text-align: left; font-size: 1.6em;}
-h3 { text-align: left; font-size: 1.3em;}
-h4 { text-align: left; font-size: 1em;}
-h5 { text-align: left; font-size: 0.9em;}
-h6 { text-align: left; font-size: 0.8em;}
+h1 { text-align: left; font-size: 2.5em;}
+h2 { text-align: left; font-size: 2em;}
+h3 { text-align: left; font-size: 1.6em;}
+h4 { text-align: left; font-size: 1.3em;}
+h5 { text-align: left; font-size: 1em;}
+h6 { text-align: left; font-size: 1em;}
 h1.title { text-align: center; font-size: 4em;}
 h2.author { text-align: center; font-size: 2em;}
 h3.date { }
