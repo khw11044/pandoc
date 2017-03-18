@@ -1,17 +1,18 @@
 
-body { margin: 5%; text-align: justify; font-size: medium; }
+body { margin: 5%; text-align: justify; font-size: 0.7em; }
 code {
 	font-family: monospace;
 	background-color: #F1F1F1;
+	margin-left: 1em;
 }
-h1 { text-align: left; }
-h2 { text-align: left; }
-h3 { text-align: left; }
-h4 { text-align: left; }
-h5 { text-align: left; }
-h6 { text-align: left; }
-h1.title { }
-h2.author { }
+h1 { text-align: left; font-size: 2em;}
+h2 { text-align: left; font-size: 1.6em;}
+h3 { text-align: left; font-size: 1.3em;}
+h4 { text-align: left; font-size: 1em;}
+h5 { text-align: left; font-size: 0.9em;}
+h6 { text-align: left; font-size: 0.8em;}
+h1.title { text-align: center; font-size: 4em;}
+h2.author { text-align: center; font-size: 2em;}
 h3.date { }
 ol.toc { padding: 0; margin-left: 1em; }
 ol.toc li { list-style-type: none; margin: 0; padding: 0; }
