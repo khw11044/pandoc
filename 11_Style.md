@@ -28,3 +28,24 @@ ol.tocli{list-style-type:none;margin:0;padding:0;}
 #### Page 나누기
 옵션설명
 	--epub-chapter-level 2
+
+#### Table of Content
+
+	--toc
+	--toc-depth=2 //기본값은 3이다.
+
+#### 메타데이터 추가
+기본적으로 title.txt파일을 이용하지만,
+자세하게 메타데이터를 추가할 수 있습니다.
+메타데이터로는 날짜, 저자, 퍼블리셔, 라이센스, 언어등을 설정할 수 있습니다.
+Dublin core tags를 사용합니다.
+	--epub-metadata=metadata.xml
+
+메타데이터의 내부예제
+
+	<dc:title>My Ebook Title</dc:title> 
+	<dc:language>en-US</dc:language> 
+	<dc:creator opf:file-as="KimHanWoong" opf:role="aut">KimHanWoong</dc:creator> 
+	<dc:publisher>Lazypic Publishing</dc:publisher>
+	<dc:date opf:event="publication">2017-03-19</dc:date>
+	<dc:rights>Copyright ©2017 by Kim Han Woong</dc:rights>
