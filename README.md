@@ -16,5 +16,6 @@ sh publish.sh // epub 파일이 생성됩니다.
 - figures 폴더에는 책에 들어가는 삽화 이미지가 존재합니다.
 - .md 파일 내부에는 이미지가 상대경로 작성되어있습니다.
 - Github에서 이미지 미리보기를 위해서 이미지관련 마크다운은 아래처럼 작성되어있습니다.
-
-	figures/image.png?raw=true
+```
+![image](figures/image.png?raw=true)
+```
