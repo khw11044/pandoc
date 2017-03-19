@@ -17,8 +17,11 @@
 - 용량이 크고 설치가 오래걸리지만 한번에 해결할 수 있습니다.
 - macOS에서는 macTex를 통해서 쉽게 설치할 수 있습니다.
 - http://www.tug.org/mactex/mactex-download.html
-- MacTex 설치후 LaTexIt을 이용하면 미리보기 할 수 있다. tex파일로 저장할 수 있다.
-- 그러나 tex파일을 더 관리해야하는 이슈가 발생한다. 책을 작성할 때 WebTex를 사용하는 것을 추천한다.
+- MacTex 설치후 LaTexIt을 이용하면 미리결과를 보면서 LaTex문법을 타이핑할 수 있습니다.
+- 또한 tex파일로 저장할 수 있습니다.
+- 그러나 tex파일을 더 관리해야하는 이슈가 발생합니다.
+- Pandoc을 사용할 때는 개인적으로 WebTex를 사용하는 것을 추천합니다.
+- Github는 WebTex문법을 지원하지 않습니다.
 
 ## WebTex
 - WebTex 설명하기.
