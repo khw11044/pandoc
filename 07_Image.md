@@ -14,6 +14,7 @@ svg는 epub3부터 지원합니다.
 - SVG의 편집툴은 오픈소스부터 상용툴까지 선택폭이 넓습니다. 좋아하는 툴을 이용해서 편집이 가능합니다.
 - 파일이 저장될 때 text형태로 저장되기 때문에 Git을 이용한 버전관리가 좋습니다.
 
+
 ## PNG
 - GIF에서 내부 압축 알고리즘에 소프트웨어 특허를 걸면서 탄생된 포멧입니다.
 - 비손실 그래픽파일 포멧중 하나 입니다.
@@ -24,6 +25,22 @@ svg는 epub3부터 지원합니다.
 - 이미지 손실이 되는 포멧이지만 용량이 작아서 널리 사용됩니다.
 
 ## Tip
+#### SVG to PNG
+- Github에서는 svg 포멧이 보이지 않습니다.
+- 컨버팅시 리눅스를 사용한다면 inkscape가 좋습니다.
+
+	inkscape -z -e test.png -w 1024 -h 1024 test.svg
+
+- macOS를 사용한다면 inkscape는 굉장히 무겁습니다. librsvg를 추천합니다.
+brew install librsvg
+
+rsvg-convert -h 800 test.svg > test_800.png
+
+- 이미지 컨버팅으로 유명한 ImageMagick은 SVG 변환시 이미지가 많이 깨지는 모습을 보여주었습니다.
+
+
+/Applications/Inkscape.app/Contents/Resources/bin/inkscape -z -e test.png mdconverting.svg
+
 #### Perl 스크립트를 이용해서 이미지를 마크다운 문법으로 일괄 변환
 이전에 소개 했던대로 마크다운 문법을 이용해서 문서에 이미지를 넣는 문법은 아래와 같습니다.
 	
