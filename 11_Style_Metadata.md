@@ -51,14 +51,17 @@ epub파일 내부에 폰트를 같이 저장할 수 있습니다.
 	--toc
 	--toc-depth=2 // 기본값은 3이다.
 
-#### 메타데이터 추가
-기본적으로 타이틀을 만들때는 title.txt 파일을 이용하지만,
+
+## 메타데이터
+기본적으로 E-book은 title.txt 파일을 이용하여 기본 정보가 들어갑니다.
+좀더 많은 정보를 E-book에 담고 싶다면 메타데이터를 추가하면 됩니다.
 xml파일을 생성하고 메타데이터를 추가할 수 있습니다.
-메타데이터의 예로는 날짜, 저자, 퍼블리셔, 라이센스, 언어등을 설정할 수 있습니다.
-Dublin core tags를 사용합니다.
+메타데이터로 날짜, 저자, 퍼블리셔, 라이센스, 언어등을 설정할 수 있습니다.
+더블린 코어를 사용합니다.(Dublin Core Metadata Element Set)
 	--epub-metadata=metadata.xml
 
-메타데이터의 내부예제
+#### 메타데이터 형식
+아래는 metadata.xml 내부형식의 예입니다.
 
 	<dc:title>My Ebook Title</dc:title> 
 	<dc:language>en-US</dc:language> 
@@ -66,3 +69,25 @@ Dublin core tags를 사용합니다.
 	<dc:publisher>Lazypic Publishing</dc:publisher>
 	<dc:date opf:event="publication">2017-03-19</dc:date>
 	<dc:rights>Copyright ©2017 by Kim Han Woong</dc:rights>
+
+#### 더블린 코어란
+인터넷의 다양한 컨텐츠를 효율적으로 검색하기 위해서 사용되는 메타데이터 입니다.
+미국 오하이오 주 더블린에서 개최된 메타 데이터 워크숍에서 최초 제안되었습니다.
+ISO 15836으로 표준화된 메타데이터 요소의 집합입니다.
+
+더블린 코어의 메타데이터 15가지 요소
+- Title / 제목
+- Creator / 제작자
+- Type / 유형 : 컨텐츠의 성격, 장르
+- Contributor / 기타제작자 : 제작에 참여한 사람들
+- Publisher / 발행처 : 책임을 가지는 개체
+- Date / 날짜 : 컨텐츠 이용날짜
+- Language / 언어 : 컨텐츠 사용언어
+- Format / 형식 : 구현 형식
+- Description / 설명 : 내용물에 대한 간단한 설명
+- Subject / 주제 : 컨텐츠의 주제
+- Relation / 관계
+- Identifier / 식별자
+- Rights / 권한 : 라이센스
+- Source / 출처 : 출처
+- Coverage / 범위 : 컨텐츠의 수량, 범위

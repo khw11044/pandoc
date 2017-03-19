@@ -9,6 +9,6 @@ pandoc --toc -S --epub-chapter-level 2 --epub-stylesheet style.css --webtex -t e
 08_Cover.md \
 09_PandocArgv.md \
 10_Math.md \
-11_Style.md \
+11_Style_Metadata.md \
 12_Reference.md
 
