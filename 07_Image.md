@@ -23,6 +23,14 @@ svg는 epub3부터 지원합니다.
 
 ## JPG
 - 이미지 손실이 되는 포멧이지만 용량이 작아서 널리 사용됩니다.
+- 용량을 최대로 줄이기 위해서는 10~30% 압축을 더 할 수 있는 구글에서 개발한 guetzli를 사용하면 좋습니다.
+- 설치방법
+	
+	brew install guetzli
+
+- 사용방법
+	
+	$ guetzli origin.jpg output.jpg
 
 ## Tip
 #### SVG to PNG
