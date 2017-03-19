@@ -13,9 +13,9 @@ epub3 형태의 아웃풋을 하기 위해서는 아래 옵션이 추가되어�
 	$ pandoc -o test.epub -t epub3 test.md
 
 
-#### 이 책을 퍼블리시하는 실제 명령어의 예제
+#### 이 책을 EPUB으로 생성하는 사용 명령어의 예제입니다.
 - 매번 반복해서 실행해야 하기때문에 스크립트로 저장해두면 좋습니다.
-- sh파일 또는 GNU make를 이용해서 셋팅하는 경우가 있습니다.
+- 일반적으로 간편하게 sh 파일을 사용하거나 GNU make를 이용해서 처리할 수 있습니다.
 - TODO : 아래 예제를 추후 실제 예제로 교체하자.
 
 	pandoc -S -o progit.epub title.txt \
@@ -29,27 +29,66 @@ epub3 형태의 아웃풋을 하기 위해서는 아래 옵션이 추가되어�
 	08-git-and-other-scms/01-chapter8.markdown \
 	09-git-internals/01-chapter9.markdown
 
-#### 현재경로의 모든 md파일을 처리하기.
-.md 들이 순서대로 정렬되어있고, 현재경로의 모든 md파일을 이용해서 
-epub 파일을 생성하고 싶다면 아래 스크립트도 사용할 수 있습니다.
+#### 현재경로의 모든 md파일을 처리하기
+현재경로에 .md파일이 모여있고 그 정보를 가지고 epub을 생성하고 싶다면
+아래 쉘명령을 사용할 수 있습니다.
     
 	$ pandoc `ls *.md | sort` -s -o test.epub
 
 ## PDF 제작하기
-PDF는 많은 사람들이 사용하는 문서포멧입니다.
-모든 OS에서 문서의 레이아웃이 깨지지 않고, 별도의 소프트웨어 없이 보기 편해서 많이 사용하는 포멧입니다.
+PDF는 이미 많은 사람들이 즐겨 사용하는 문서포멧입니다.
+모든 OS에서 문서의 레이아웃이 깨지지 않고,
+대부분 별도의 소프트웨어 없이 보기 편해서 많이 사용하는 포멧입니다.
+그림과 레이아웃이 중요한 E-book은 보통 PDF로 배포됩니다.
 PDF파일을 생성하는 예제는 아래와 같습니다.
+명령어가 길게 보일 수 있어서 다음줄에 해당하는 '\' 문자를 넣었습니다.
 
-	pandoc README.md -f markdown -t latex -s -o README.pdf --latex-engine=xelatex --variable mainfont='Nanum Myeongjo'
+	pandoc -f markdown -t latex \
+	-s -o document.pdf \
+	--latex-engine=xelatex \
+	--variable mainfont='Nanum Myeongjo' \
+	document.md
 
-TODO:몇가지 옵션에 대해서 설명하기.
+Pandoc은 PDF를 생성할 LaTex를 이용합니다.
+LaTex는 오픈소스 조판시스템(Typesetting System)입니다.
+조판은 최종 출력이 되기전에 출력될 결과물에 맞게 도형,글을 배치하는 작업입니다.
+LaTex도 여러 버전의 엔진이 있으며 Pandoc에 PDF 처리시 선택할 수 있습니다.
+pdflatex와 xelatex중 유니코드와 최신 폰트 처리에는 xelatex가 좋습니다.
 
 ## Docx 제작하기
 일반 사용자의 경우 마이크로소프트 오피스 포멧인 docx 파일이 익숙합니다.
 우리나라는 출판사에서 교정확인을 위해 docx형태를 요청하는 경우도 많이 있습니다.
 아래는 docx 파일을 생성하는 예제 입니다.
 
-	$ pandoc 01_Preface.md -t docx -s -o test.docx
+	$ pandoc -t docx -s -o document.docx document.md
 
-## MOBI 제작하기
-컨버팅툴 : https://www.amazon.com/gp/feature.html/?docId=1000765261
+## ODT 제작하기
+여러분의 업무환경이 리눅스라면 아래 나열한 툴들을 사용할 확률이 있습니다.
+아래는 odt 파일을 생성하는 예제 입니다.
+	
+	$ pandoc -t odt -s -o document.odt document.md
+
+## MOBI & 아마존
+Mobi는 아마존 킨들용 E-book포멧입니다.
+epub파일을 킨들에 넣을 수 없습니다.
+테스트환경 : macOS Sierra 10.12.2
+제 환경에서는 Send To Kindle을 제외한 나머지 소프트웨들이 잘 작동되지 않았습니다.
+
+### KindleGen
+KindleGen 소프트웨어는 html,xhtml,epub 파일을 mobi파일로 바꾸어주는 커맨드라인 툴입니다.
+아래 사이트에서 다운로드가 가능합니다.
+
+	http://www.amazon.com/kindleformat/kindlegen
+
+### KindlePreviewer
+문서가 킨들에 어떻게 보이는지 볼 수 있는 툴입니다.
+윈도우용, 맥용만 존재합니다.
+
+	http://www.amazon.com/kindleformat/kindlepreviewer
+
+### Send to Kindle
+킨들로 문서를 보낼 수 있습니다. 아쉽게도 epub 지원하지 않습니다.
+지원포멧은 doc, docx, pdf, txt, ptf 입니다.
+Send To Kindle 소프트웨어를 다운로드 받을 수 있는 사이트입니다.
+
+	https://www.amazon.com/gp/sendtokindle
