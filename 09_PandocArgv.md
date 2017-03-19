@@ -1,8 +1,27 @@
 # Pandoc의 세부옵션
-- -f : 소스포멧
-- -t : 타겟포멧
-- -o : output 파일. pdf는 latex 변환후 pdflatex를 통해서 pdf파일이 생성됩니다.
-- -s : 하나의 파일로 모으는 옵션입니다.
-- --latex-engine : 기본설정인 pdflatex 엔진은 유니코드(한글 처리)에 문제가 많습니다. xelatex라는 엔진을 더 많이 사용합니다.
-- --variable mainfont='Nanum Myeongjo' : 폰트를 설정하는 방법입니다. 한글폰트를 적어주어야 한글이 깨지지 않습니다.
-- --toc : Table of Contents의 약자 입니다. toc 옵션을 달면 목차가 들어갑니다.
+이 장에서는 쉘에서 아래 명령어를 타이핑했을 때 나오는 옵션을 알아보겠습니다.
+모든 기능을 알아보기 보다는 중요하고 자주 사용하는 형태들을 다룰 예정입니다.
+
+	$ pandoc --help
+
+#### -f
+소스포멧
+
+#### -t
+타겟포멧
+
+#### -o
+output 파일.
+
+#### -s
+하나의 파일로 모으는 옵션입니다.
+
+#### --latex-engine
+기본설정인 pdflatex 엔진은 유니코드 처리시 문제가 많습니다.
+최신 폰트를 지원하거나 한글을 사용할 때는 xelatex라는 엔진을 더 많이 사용합니다.
+
+#### --variable mainfont='Nanum Myeongjo'
+폰트를 설정하는 방법입니다. 한글폰트를 적어주어야 한글이 깨지지 않습니다.
+
+#### --toc
+Table of Contents의 약자 입니다. toc 옵션을 달면 목차가 들어갑니다.

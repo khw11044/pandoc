@@ -55,6 +55,8 @@ LaTex는 오픈소스 조판시스템(Typesetting System)입니다.
 LaTex도 여러 버전의 엔진이 있으며 Pandoc에 PDF 처리시 선택할 수 있습니다.
 pdflatex와 xelatex중 유니코드와 최신 폰트 처리에는 xelatex가 좋습니다.
 
+Pandoc은 내부적으로 문서를 LaTex로 변환하고 PdfLaTex 또는 XeLaTex를 통해서 PDF가 생성되는 형태입니다.
+
 ## Docx 제작하기
 일반 사용자의 경우 마이크로소프트 오피스 포멧인 docx 파일이 익숙합니다.
 우리나라는 출판사에서 교정확인을 위해 docx형태를 요청하는 경우도 많이 있습니다.
