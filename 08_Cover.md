@@ -2,7 +2,7 @@
 이 장에서는 Title을 추가하고 표지를 입히는 과정을 다루게 됩니다.
 
 #### Title 만들기
-E-book에 Title을 생성하는 방법을 다룹니다.
+E-book에 Title을 넣어봅시다.
 아래 내용을 title.txt 라는 파일로 생성합니다.
 
 	---
@@ -12,29 +12,32 @@ E-book에 Title을 생성하는 방법을 다룹니다.
 	language: ko-KR
 	...
 
-epub 파일 제작할 때 방금 만든 title.txt가 먼저 처리될 수 있도록 명령어를 구성합니다.
-아래는 명령어의 예입니다.
+epub 파일 생성할 때 위에서 만든 title.txt 파일이 먼저 처리될 수 있도록
+명령어를 구성하면 됩니다. 아래는 명령어의 예입니다.
 
 	$ pandoc -S -o document.epub title.txt \
 	chapter1.md \
 	chapter2.md
 
-#### language 표기법
-EPUB을 제작할 때 title.txt의 language부분에
-ISO 639 와 ISO 3166-1 코드에 따라 책에서 많이 사용되는 언어를 표기해야 합니다.
+#### language 작성법
+EPUB을 제작할 때 title.txt 내용에서
+language부분을 작성하는 방법을 알려드리겠습니다.
+이 책은 대부분 한국어로 작성되었습니다.
+산업표준 ISO 639 와 ISO 3166-1 코드를 검색합니다.
 ISO 639는 인쇄된 언어를 뜻하며 두자리 소문자 코드입니다.
 ISO 639 정보는 아래 사이트에서 찾아볼 수 있습니다.
 
 	https://www.w3.org/WAI/ER/IG/ert/iso639.htm
 
-ISO 3166-1 국가정보를 뜻합니다.
-ISO 3166-1 정보는 아래 사이트에서 찾아볼 수 있습니다.
+위 사이트에서 찾아보면 한국어는 "kr"로 정보가 나옵니다.
+
+다음은 국가정보를 뜻하는 ISO 3166-1 검색하겠습니다.
+ISO 3166-1 의 자세한 정보는 아래 사이트에서 찾아볼 수 있습니다.
 
 	https://ko.wikipedia.org/wiki/ISO_3166-1
 
-한국어는 ISO 639에서는 ko이며
-대한민국은 ISO 3166-1 규칙에서 KR 값입니다.
-그래서 이 책의 language 값은 "ko-KR" 입니다.
+대한민국은 ISO 3166-1 코드로 "KR"입니다.
+여러분이 보고있는 이 Pandoc책의 language 값은 "ko-KR"이 됩니다.
 
 #### 표지넣기
 여러분이 표지에 이미지를 넣고 싶을때는 다음 옵션을 이용합니다.
