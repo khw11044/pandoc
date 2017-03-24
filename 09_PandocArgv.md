@@ -4,8 +4,42 @@
 
 	$ pandoc --help
 
+## 메뉴얼
+아래 URL에 가면 Pandoc의 옵션에 대한 메뉴얼을 볼 수 있습니다.
+
+	http://pandoc.org/MANUAL.html
+
+## 세부옵션
+
 #### -f
-소스포멧
+인풋형태의 포멧을 설정하는 옵션입니다.
+
+	pandoc -f {format}
+
+아래는 포멧에 들어갈 수 있는 문자열입니다.
+- native
+- json
+- markdown
+- markdown_strict
+- markdown_phpextra
+- markdown_github
+- markdown_mmd
+- commonmark
+- textile
+- rst
+- html
+- docbook
+- t2t
+- docx
+- odt
+- epub
+- opml
+- org
+- mediawiki
+- twiki
+- haddock
+- latex
+- +lhs
 
 #### -t
 타겟포멧
@@ -14,7 +48,8 @@
 output 파일.
 
 #### -s
-하나의 파일로 모으는 옵션입니다.
+머릿말과 꼬릿말을 사용하여 문서를 제작합니다.
+pdf, epub, epub3, fb2, docx, odt 문서에 대해서 자동으로 설정됩니다.
 
 #### --latex-engine
 기본설정인 pdflatex 엔진은 유니코드 처리시 문제가 많습니다.
