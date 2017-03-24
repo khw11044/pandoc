@@ -35,23 +35,24 @@ svg는 epub3부터 지원합니다.
 
 ## Tip
 #### SVG to PNG
-- Github에서는 svg 포멧이 보이지 않습니다.
-- 공동작업을 위해서는 원본 이미지는 SVG를 사용하고, PNG로 컨버팅하면 편리할 경우가 있습니다.
-- 여러분이 SVG에서 PNG로 변환시 리눅스를 사용한다면 inkscape가 좋습니다.
-- 아래는 inkscape를 이용해서 svg를 png로 변환하는 예제입니다.
+데이터 관리 측면에서는 당연히 SVG 포멧의 장점이 있지만, 공동작업을 위해서 
+Github를 사용하거나 svg를 지원하지 않는 문서를 생성해야 할 때는 svg를 png로 컨버팅 하는것이
+공동작업을 위해서 좋을 경우도 있습니다.
+여러분이 SVG에서 PNG로 변환시 리눅스를 사용한다면 inkscape가 좋습니다.
+아래는 inkscape를 이용해서 svg를 png로 변환하는 예제입니다.
 
 	$ inkscape -z -e test.png -w 1024 -h 1024 test.svg
 
-- macOS를 사용한다면 inkscape가 실행될때마다 실행속도가 느립니다.
-- macOS에서는 librsvg를 추천합니다. 설치는 아래와 같습니다.
+여러분이 macOS를 사용한다면 inkscape가 실행될때 실행속도가 느린것에 불만을 느낄 수 있습니다.
+쾌적한 작업을 위해서 macOS에서는 librsvg를 추천합니다. 설치는 아래와 같습니다.
 
 	brew install librsvg
 
-- 설치이후 사용법은 아래와 같습니다.
+설치이후 svg파일을 png로 변환하는 방법은 아래와 같습니다.
 	
 	$ rsvg-convert -h 800 test.svg > test_800.png
 
-- 이미지 컨버팅으로 유명한 ImageMagick은 SVG 변환시 이미지가 많이 깨지는 모습을 보여주었습니다.
+이미지 컨버팅으로 유명한 오픈소스툴인 ImageMagick은 SVG 변환시 이미지가 많이 깨지는 모습을 보여주었습니다.
 
 #### Perl 스크립트를 이용해서 이미지를 마크다운 문법으로 일괄 변환
 이전에 소개 했던대로 마크다운 문법을 이용해서 문서에 이미지를 넣는 문법은 아래와 같습니다.
