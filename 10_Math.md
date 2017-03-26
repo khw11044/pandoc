@@ -108,3 +108,9 @@ MathML은 여러분이 사용하는 브라우저가 지원할 수도 있고 지�
       </mrow>
     </mfrac>
     </math>
+
+xml 문서답게 많은 태그가 작성되어야 합니다.
+LaTex 문법이 더 간단하기 때문에 LaTex로 수식을 작성하고 MathML로 바꾸어주는 작업이 더 손쉽습니다.
+
+LaTex to MathML 컨버팅을 지원하는 사이트
+- https://www.mathtowebonline.com
