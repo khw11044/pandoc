@@ -3,7 +3,6 @@ pandoc --toc -S --epub-chapter-level 2 \
 --epub-cover-image figures/cover_600x800.jpg \
 --webtex -t epub3 -o pandoc.epub title.txt \
 01_Preface.md \
-Contributor.md \
 02_Introduction.md \
 03_Pandoc.md \
 04_Markdown.md \

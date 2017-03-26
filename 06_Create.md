@@ -21,7 +21,6 @@ epub3 형태의 아웃풋을 하기 위해서는 아래 옵션이 추가되어�
 	--epub-cover-image figures/cover_600x800.jpg \
 	--webtex -t epub3 -o pandoc.epub title.txt \
 	01_Preface.md \
-	Contributor.md \
 	02_Introduction.md \
 	03_Pandoc.md \
 	04_Markdown.md \
