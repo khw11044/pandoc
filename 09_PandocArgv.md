@@ -16,31 +16,31 @@
 
 	pandoc -f {format}
 
-아래는 포멧에 들어갈 수 있는 문자열입니다.
+아래는 포멧에 들어갈 수 있는 문서 양식입니다. 마크업언어는 따로 설명을 달지 않았습니다.
 
-- native : TODO
-- json : 
-- markdown : 
-- markdown_strict : 
-- markdown_phpextra : 
-- markdown_github : 
-- markdown_mmd : 
-- commonmark : 
-- textile : 
-- rst : 
-- html : 
-- docbook : 
-- t2t : 
-- docx : 
-- odt : 
-- epub : 
-- opml : 
-- org : 
-- mediawiki : 
-- twiki : 
-- haddock : 
-- latex : 
-- +lhs : 
+- native : 하스켈 데이터입니다.
+- json : JavaScript Object Notation 문서. 사람이 읽고쓰기 편리하며, 기계가 분석하고 생성하기에 용이한 포멧입니다.
+- markdown
+- markdown_strict
+- markdown_phpextra
+- markdown_github
+- markdown_mmd
+- commonmark
+- textile
+- rst
+- html
+- docbook : Docbook 기술위원회에서 관리하는 스키마입니다. 컴퓨터 하드웨어,소프트웨어에 관한 서적 및 논문에 적합한 포멧입니다. HaL Computr Systems와 O'Reilly & Associates에 의해서 설계되고 구현되었습니다.
+- t2t : Txt2tags 명령어의 문서파일입니다. 리눅스 메뉴얼을 생성할 때 많이 사용합니다.
+- docx : 마이크로소프트 워드 포멧입니다.
+- odt : OpenOffice, LibreOffice 포멧입니다.
+- epub : E-book 포멧입니다.
+- opml : Outline Processor 마크업 언어이다. RSS 피드 공유시 많이 사용한다.
+- org
+- mediawiki
+- twiki
+- haddock
+- latex : LaTex 양식입니다.
+- +lhs
 
 #### -t
 타겟포멧
