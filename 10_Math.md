@@ -48,7 +48,7 @@ WebTex 프로젝트는 LaTex를 html문서로 문제없이 컴파일 하는 것�
 
 	--webtex
 
-WebTex 문법은 $ 수식 $ 형태로 구성되어 있습니다.
+WebTex 문법은 "$수식$" 형태로 구성되어 있습니다.
 
     $f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n$
 
