@@ -71,7 +71,7 @@ MathML은 여러분이 사용하는 브라우저가 지원할 수도 있고 지�
 
 #### MathML의 작성
 
-![mathml_example](figures/mathml_example.png)
+![mathml_example](figures/mathml_example.png?raw=true)
 
 위 수식에 해당하는 MathML의 문법입니다.
 
