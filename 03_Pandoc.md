@@ -7,12 +7,12 @@ Pandoc을 사용하는 프로젝트중 유명한 프로젝트로는 [Progit](htt
 ![Pandoc은 문서변환이 유연합니다.](figures/mdconverting.png?raw=true)
 
 ## Pandoc 설치하기
-아래 사이트에서 사용하고 있는 OS의 배포판을 다운받으세요.
+아래 사이트에서 여러분의 환경에 해당하는 OS의 배포판을 다운받으세요.
 [https://github.com/jgm/pandoc/releases](https://github.com/jgm/pandoc/releases)
 
 #### macOS에서 brew를 이용해서 설치하기
 macOS에서는 brew를 이용해서 쉽게 설치할 수 있습니다.
-brew가 없다면 [https://brew.sh/index_ko.html](https://brew.sh/index_ko.html) 사이트에서 설치해주세요.
+brew가 없다면 [https://brew.sh/index_ko.html](https://brew.sh/index_ko.html) 사이트에서 brew를 먼저 설치하고 Pandoc을 설치 해주세요.
 
 	$ brew install pandoc
 
