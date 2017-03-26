@@ -13,5 +13,8 @@ pandoc --toc -S --epub-chapter-level 2 \
 09_PandocArgv.md \
 10_Math.md \
 11_Style_Metadata.md \
-12_Reference.md
+12_Reference.md \
+OpenSource.md \
+Epilogue.md
+
 
