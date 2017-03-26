@@ -1,5 +1,5 @@
-# Cover
-이 장에서는 Title을 추가하고 표지를 입히는 과정을 다루게 됩니다.
+# Title & Cover
+이 장에서는 Title을 추가하고 책 표지를 입히는 과정을 다루게 됩니다.
 
 #### Title 만들기
 E-book에 Title을 넣어봅시다.
