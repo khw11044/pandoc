@@ -7,7 +7,7 @@ Git 프로그램 사용법을 알려주는 Progit 이라는 책 Git을 배우려
 상세하게 Git을 알려주고 있으며, HTML, E-book은 무료로 배포하고 있기 때문입니다.
 Progit E-book책 작업에도 pandoc이 이용되었습니다.
 실제 진행중인 Progit 프로젝트를 git을 이용해서 다운받아 보면 유용한 팁들을 발견할 수 있습니다.
-또한 책을 작성하묘 사용된 테크닉들을 [http://pandoc.org/epub.html](http://pandoc.org/epub.html) 사이트에서도 다루고 있습니다.
+또한 책을 작성하면서 사용된 테크닉들을 [http://pandoc.org/epub.html](http://pandoc.org/epub.html) 사이트에서도 다루고 있습니다.
 
 ## Troff
 브라이언 커닝헌이 책을 작성할 때 사용하는 유틸리티입니다. 벨연구소에서 최초 제작된 유틸리티 입니다.
