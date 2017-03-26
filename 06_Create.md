@@ -14,28 +14,36 @@ epub3 형태의 아웃풋을 하기 위해서는 아래 옵션이 추가되어�
 
 
 #### 스크립트 만들기
-매번 epub을 만들때마다 명령어를 반복해서 타이핑하는것은 번거롭습니다. 간편하게 sh 스크립트 파일만들어서 사용하거나 GNU make를 이용해서 처리할 수 있습니다. make를 활용하는 방법은 이 책의 레퍼런스 장에서 다룹니다.
-저는 publish.sh파일을 생성하고 내용은 아래 처럼 구성했습니다.
+매번 명령어를 반복해서 타이핑후 epub 파일을 만드는 것은 번거롭습니다. 간편하게 sh 스크립트 파일만들어서 사용하거나 GNU make를 이용해서 처리할 수 있습니다. make를 활용하는 방법은 이 책의 레퍼런스 장에서 다룹니다. 이 책은 publish.sh 라는 파일을 생성하고 내용은 아래 처럼 구성했습니다.
 
-	pandoc -S -o progit.epub title.txt \
-	01-introduction/01-chapter1.markdown \
-	02-git-basics/01-chapter2.markdown \
-	03-git-branching/01-chapter3.markdown \
-	04-git-server/01-chapter4.markdown \
-	05-distributed-git/01-chapter5.markdown \
-	06-git-tools/01-chapter6.markdown \
-	07-customizing-git/01-chapter7.markdown \
-	08-git-and-other-scms/01-chapter8.markdown \
-	09-git-internals/01-chapter9.markdown
+	pandoc --toc -S --epub-chapter-level 2 \
+	--epub-stylesheet style.css \
+	--epub-cover-image figures/cover_600x800.jpg \
+	--webtex -t epub3 -o pandoc.epub title.txt \
+	01_Preface.md \
+	Contributor.md \
+	02_Introduction.md \
+	03_Pandoc.md \
+	04_Markdown.md \
+	05_Epub.md \
+	06_Create.md \
+	07_Image.md \
+	08_Cover.md \
+	09_PandocArgv.md \
+	10_Math.md \
+	11_Style_Metadata.md \
+	12_Reference.md
 
-위 publish.sh파일을 실행하면 epub파일이 생성됩니다.
+	
+위 publish.sh파일을 실행하면 같은 경로에 epub파일이 생성됩니다.
 터미널에서 실행하는 방법은 아래와 같습니다.
 
 	$ sh publish.sh
 
-#### 현재경로의 모든 md파일을 처리하기
-책을 구성하고 목차를 생성하는 과정이 있기 때문에 많이 사용되는 형태는 아니지만 상황에 따라서 활용할 수 있는 팁하나를 소개합니다.
-현재경로에 .md 파일이 모여있고 모든 파일을 이용해서 epub을 생성하고 싶다면, 아래 명령을 사용할 수 있습니다. 
+#### 현재경로의 md 파일로 epub 만들기
+책을 제작할 때 내용을 구성하고 목차를 생성하는 과정이 있기 때문에 많이 사용되는 형태는 아니지만 활용할 수 있는 팁하나를 소개합니다.
+
+현재경로에 .md 파일이 모여있고 모든 파일을 이용해서 epub을 생성하고 싶다면, 아래 명령을 사용할 수 있습니다.
     
 	$ pandoc `ls *.md | sort` -s -o test.epub
 
@@ -51,7 +59,7 @@ PDF파일을 생성하는 예제는 아래와 같습니다.
 	--variable mainfont='Nanum Myeongjo' \
 	document.md
 
-조금은 특수한 명령어들이 몇개 보입니다.
+조금은 특수한 옵션들이 몇몇 보입니다.
 Pandoc은 PDF를 생성할 LaTex를 이용합니다.
 LaTex는 오픈소스 조판시스템(Typesetting System)입니다.
 조판은 최종 출력이 되기전에 출력될 결과물에 맞게 도형,글을 배치하는 작업입니다.
@@ -70,13 +78,14 @@ Pandoc은 내부적으로 문서를 LaTex로 변환하고 이 후 LaTex Engine�
 	
 	$ pandoc -t odt -s -o document.odt document.md
 
-## MOBI & 아마존
+## MOBI 포멧 & 아마존 킨들
 .mobi 확장자를 가진 문서는 아마존 킨들용 E-book 포멧입니다.
 epub파일을 아마존 킨들에 바로 넣을 수 없습니다. 
-전용파일인 .mobi로 변환해야 합니다. 아마존에서 소개하는 유틸리티를 이용해서 컨버팅해 보았지만 좋은 결과를 얻을 수 없었습니다.
+킨들에 넣기 위해서는 전용파일인 .mobi 포멧으로 변환해야 합니다.
+아마존에서 소개하는 유틸리티를 이용해서 컨버팅해 보았지만 개인적으로 좋은 결과를 얻을 수 없었습니다.
 
-- 테스트환경 : macOS Sierra 10.12.2
-- 위 환경에서 Send To Kindle을 제외한 나머지 소프트웨들이 잘 작동되지 않았습니다.
+- 제 테스트환경 : macOS Sierra 10.12.2
+- 위 환경에서는 Send To Kindle 유틸리티를 제외한 나머지 소프트웨들이 잘 작동되지 않았습니다.
 
 ### KindleGen
 KindleGen 소프트웨어는 html,xhtml,epub 파일을 mobi파일로 바꾸어주는 커맨드라인 툴입니다.
