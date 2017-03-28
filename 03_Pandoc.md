@@ -21,3 +21,5 @@ brew가 없다면 [https://brew.sh/index_ko.html](https://brew.sh/index_ko.html)
 여러분이 Redhat 또는 CentOS를 사용한다면 yum 을 이용해서 Pandoc을 설치할 수 있습니다.
 
 	# yum install pandoc
+
+\newpage

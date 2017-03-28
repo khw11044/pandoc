@@ -99,12 +99,17 @@ epub파일을 아마존 킨들에 바로 넣을 수 없습니다.
 ### KindleGen
 KindleGen 소프트웨어는 html,xhtml,epub 파일을 mobi파일로 바꾸어주는 커맨드라인 툴입니다.
 아래 사이트에서 다운로드가 가능합니다.
+
 - 다운로드 사이트 : http://www.amazon.com/kindleformat/kindlegen
 
 ### KindlePreviewer
 epub 문서가 아마존 킨들에서 어떻게 보이는지 미리 볼 수 있는 툴입니다. 윈도우용, 맥용만 존재합니다.
+
 - 다운로드 사이트 : http://www.amazon.com/kindleformat/kindlepreviewer
 
 ### Send to Kindle
 문서를 킨들로 전송하기 위한 유틸리티입니다. 아쉽게도 epub 지원하지 않습니다. 지원되는 포멧은 doc, docx, pdf, txt, ptf 입니다.
+
 - 다운로드 사이트 : https://www.amazon.com/gp/sendtokindle
+
+\newpage
