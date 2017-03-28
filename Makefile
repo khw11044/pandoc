@@ -1,5 +1,5 @@
 makedir:
-	mkdir publish
+	mkdir -p publish
 pdf: makedir
 	pandoc --toc -S --epub-chapter-level 2 \
 	--epub-stylesheet style.css \
@@ -93,7 +93,7 @@ html: makedir
 	13_OpenSource.md \
 	14_Epilogue.md
 	cp -rf figures publish
-	cp style.css publish
+	cp -f style.css publish
 all: pdf epub docx odt html
 clean:
 	rm -rf publish
