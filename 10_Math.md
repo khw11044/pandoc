@@ -116,4 +116,3 @@ LaTex 문법이 더 간단하기 때문에 LaTex로 수식을 작성하고 MathM
 LaTex to MathML 컨버팅을 지원하는 사이트
 - https://www.mathtowebonline.com
 
-\newpage

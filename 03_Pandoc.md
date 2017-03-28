@@ -22,4 +22,3 @@ brew가 없다면 [https://brew.sh/index_ko.html](https://brew.sh/index_ko.html)
 
 	# yum install pandoc
 
-\newpage

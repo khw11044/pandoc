@@ -119,4 +119,3 @@ Pandoc으로 epub 파일을 생성할 때 메타데이터가 작성된 xml파일
 아래는 metadata.xml파일을 epub 생성시 추가하는 명령어입니다.
 
 	--epub-metadata=metadata.xml
-\newpage

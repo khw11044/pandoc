@@ -40,7 +40,7 @@ epub: makedir
 	12_Reference.md \
 	13_OpenSource.md \
 	14_Epilogue.md
-docx:
+docx: makedir
 	pandoc --toc -S \
 	--webtex -t docx -o publish/pandoc.docx title.txt \
 	01_Preface.md \
@@ -75,9 +75,9 @@ odt: makedir
 	13_OpenSource.md \
 	14_Epilogue.md
 html: makedir
-	pandoc -s \
+	pandoc -s -S --toc \
 	--css style.css \
-	--webtex -t html5 -o publish/pandoc.html title.txt \
+	-o publish/pandoc.html title.txt \
 	01_Preface.md \
 	02_Introduction.md \
 	03_Pandoc.md \
@@ -93,6 +93,7 @@ html: makedir
 	13_OpenSource.md \
 	14_Epilogue.md
 	cp -rf figures publish
+	cp style.css publish
 all: pdf epub docx odt html
 clean:
 	rm -rf publish

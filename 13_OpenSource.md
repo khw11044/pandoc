@@ -40,4 +40,3 @@ Svg이미지를 Png로 변환해야할 때 사용합니다.
 
 ### macTex
 macOS에서 LaTex를 작성할 때 사용합니다.
-\newpage

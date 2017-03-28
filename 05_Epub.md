@@ -35,4 +35,3 @@ epub3은 멀티미디어를 다룰수 있도록 다양한 기능이 추가되었
 
 	$ pandoc -t epub3
 
-\newpage

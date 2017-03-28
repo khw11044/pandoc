@@ -77,4 +77,3 @@ Perl 스크립트는 아래와 같습니다.
 
 	![이미지에 대한 설명](./figures/test.png)
 
-\newpage
