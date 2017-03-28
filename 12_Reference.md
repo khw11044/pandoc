@@ -45,7 +45,14 @@ inputfile을 이용해서 PostScript 파일을 생성해보겠습니다. 한글�
 
 ## Make
 
-TODO:동시에 여러파일을 퍼블리시 하는 코드를 작성한다.
+동시에 여러 타입의 문서로 생성하는 코드입니다.
+make pdf
+make epub
+make html
+make docx
+make odt
+make all
+make clean
 
 #### Make 파일 작성법
 
@@ -60,19 +67,6 @@ TODO:동시에 여러파일을 퍼블리시 하는 코드를 작성한다.
 	
 	clean:
 		rm -rf $(EXPORT_DIR)
-
-#### Make 파일 활용법
-
-	%.html: %.md style.css Makefile
-		pandoc -c style.css -s -f markdown -t html --standalone -o $@ $<
-
-	%.odt: %.md Makefile
-		pandoc --standalone -f markdown -t odt -o $@ $<
-
-	%.pdf: %.md %.odt
-		markdown2pdf -f markdown -o $@ $<
-
-	all: doc.html doc.odt doc.pdf
 
 ## Grip
 Grip 명령어는 마크다운 문서를 웹서버로 바꾸어주는 유틸리티입니다.
