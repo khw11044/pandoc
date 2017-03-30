@@ -46,8 +46,8 @@ table {
     margin-right: auto;
     margin-bottom: 24px;
     border-spacing: 0;
-    border-bottom: 2px solid #a8b2bf;
-    border-top: 2px solid #a8b2bf;
+    border-bottom: 2px solid #bdbdbd;
+    border-top: 2px solid #bdbdbd;
 }
 table th {
     padding: 3px 10px;
@@ -55,7 +55,7 @@ table th {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #a8b2bf;
+    border-bottom: 1px solid #bdbdbd;
 }
 table td {
     padding: 3px 10px;
