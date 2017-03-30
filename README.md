@@ -12,7 +12,7 @@ yum install pandoc    // linux
 brew install pandoc   // macOS
 ```
 
-- 이 리포지터리를 Git을 이용해서 clone 합니다.
+- Git을 이용해서 이 리포지터리를 Clone 합니다.
 ```
 git clone https://github.com/khw7096/pandoc.git
 cd pandoc
