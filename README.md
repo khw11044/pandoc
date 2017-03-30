@@ -5,10 +5,8 @@
 
 #### E-book 파일 생성
 - pandoc을 설치합니다.
-- os별 바이너리 다운로드 사이트
-https://github.com/jgm/pandoc/releases
-
-- 쉬운설치법 : linux, macOS
+- os별 바이너리 다운로드 사이트 : https://github.com/jgm/pandoc/releases
+- yum 또는 brew를 이용한 쉬운설치법
 ```
 yum install pandoc    // linux
 brew install pandoc   // macOS
