@@ -77,6 +77,8 @@ pdfLaTex,luaLaTex,xeLaTex가 있습니다. 엔진들중 유니코드와 최신 �
 
 Pandoc은 내부적으로 문서를 LaTex로 변환하고 이후 LaTex Engine을 통해서 PDF가 생성되는 형태입니다.
 
+나눔명조 파일받기 : https://smartfonts.com/nanum.font?style=myeongjo
+
 ## Docx 제작하기
 대부분 많은 사용자들 마이크로소프트 오피스 포멧인 docx 파일이 익숙합니다. 우리나라는 출판사에서 교정확인을 위해 docx형태를 요청하는 경우도 많이 있습니다. 아래는 마크다운 문서를 docx 파일을 생성하는 예제 입니다.
 
