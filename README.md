@@ -1,7 +1,8 @@
 # Pandoc(작업중)
 - E-book을 쉽게 제작할 수 있는 [Pandoc](http://www.pandoc.org) 사용법을 다루는 책입니다.
+- 책의 집필 작업이 일정부분 완료되면 https://github.com/khw7096/pandoc/releases 페이지에 epub, pdf 파일을 업로드 할 예정입니다.
 - 이 코드저장소를 다운로드 하는것은 책의 예제 소스코드를 다운로드 받는것과 같습니다.
-- 작업이 완료되면 https://github.com/khw7096/pandoc/releases 페이지에 컴파일된 책을 업로드 할 예정입니다.
+
 
 #### 이 저장소를 이용해서 E-book 파일을 생성하기
 - E-book 파일을 만들기 위해서는 Pandoc 프로그램이 필요합니다.
