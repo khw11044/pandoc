@@ -5,7 +5,7 @@
 
 
 #### 이 저장소를 이용해서 E-book 파일을 생성하기
-- E-book 파일을 만들기 위해서는 Pandoc 프로그램이 필요합니다.
+- 이 저장소의 코드를 가지고 E-book 파일을 만들기 위해서는 Pandoc 프로그램이 필요합니다.
 - https://github.com/jgm/pandoc/releases 사이트에서 각 OS별 설치파일을 받을 수 있습니다.
 - 리눅스나 MacOS를 사용한다면 yum 또는 brew 명령어를 이용해 손쉽게 설치할 수 있습니다.
 ```
