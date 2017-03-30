@@ -96,7 +96,7 @@ WebTex 문법은 "$수식$" 형태로 구성되어 있습니다.
 
     $f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n$
 
-위 문장이 문제없이 잘 처리되었다면 아래와 같은 수식이 그려집니다.
+위 문장이 문제없이 잘 처리되었다면 epub문서에 아래와 같은 수식이 그려집니다.
 
 ![latex_example](figures/latex_example.png?raw=true)
 
