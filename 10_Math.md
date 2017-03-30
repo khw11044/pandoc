@@ -87,7 +87,7 @@ MacTex 설치후 LaTexIt을 이용하면 미리결과를 보면서 LaTex문법�
 ## WebTex
 LaTex는 종이 인쇄물 기반의 기술입니다. 현대 과학의 대부분의 정보는 Web으로 표기됩니다.
 WebTex 프로젝트는 LaTex를 html문서로 문제없이 컴파일 하는 것을 목표로 두고 있습니다.
-문법은 LaTex와 거의 같습니다. epub 만을 제작하는 상황이라면 WebTex를 사용하는것은 좋은 방법입니다.
+문법은 LaTex와 거의 같습니다. 오직 epub 만을 제작하는 상황이라면 WebTex를 사용하는것은 좋은 방법입니다.
 만약 여러분이 마크다운에서 WebTex 문법을 사용했다면 epub 파일을 제작할 때 아래 옵션을 추가해주면 됩니다.
 
 	--webtex
@@ -153,9 +153,10 @@ MathML은 여러분이 사용하는 브라우저가 지원할 수도 있고 지�
     </mfrac>
     </math>
 
-xml 문서답게 많은 태그가 작성되어야 합니다.
-LaTex 문법이 더 간단하기 때문에 LaTex로 수식을 작성하고 MathML로 바꾸어주는 작업이 더 손쉽습니다.
+xml 문법을 사용하기 때문에 많은 태그가 작성되어야 합니다.
+일반적으로 LaTex 문법이 더 간단하기 때문에 
+LaTex로 수식을 작성하고 MathML로 바꾸어주는 작업이 더 쉽습니다.
 
-LaTex to MathML 컨버팅을 지원하는 사이트
+LaTex to MathML 컨버팅을 지원하는 사이트입니다.
 - https://www.mathtowebonline.com
 
