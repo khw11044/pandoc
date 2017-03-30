@@ -20,8 +20,8 @@ make all // epub,html,pdf,docx,odt 파일이 publish 경로에 생성됩니다.
 ```
 
 #### 삽입된 이미지의 특성
-- figures 폴더에는 책에 삽입되는 이미지가 있습니다.
-- E-book 및 Github에서 이미지 미리보기를 위해 이미지 경로뒤 `?raw=true` 문자열이 추가되어 있습니다.
+- 책에 사용된 이미지는 figures 디렉토리에 있습니다.
+- E-book 및 Github에서 이미지가 잘 보이기 위해서 이미지 경로뒤에 `?raw=true` 문자열이 추가되어 있습니다.
 ```
 ![image](figures/image.png?raw=true)
 ```
