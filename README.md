@@ -3,7 +3,7 @@
 - 책의 예제는 이 책의 소스코드 입니다. 이 리포지터리를 다운받는 것 자체가 소스코드를 내려받는 구조입니다.
 - 작업이 어느정도 완료되면 https://github.com/khw7096/pandoc/releases 페이지에 컴파일된 책을 업로드 할 예정입니다.
 
-#### E-book 파일 생성
+#### 이 저장소를 이용해서 E-book 파일을 생성하기
 - pandoc을 설치합니다.
 - os별 바이너리 다운로드 사이트 : https://github.com/jgm/pandoc/releases
 - yum 또는 brew를 이용한 쉬운설치법
@@ -12,7 +12,7 @@ yum install pandoc    // linux
 brew install pandoc   // macOS
 ```
 
-- Git을 이용해서 이 리포지터리를 Clone 합니다.
+- Git을 이용해서 이 저장소를 복사합니다.
 ```
 git clone https://github.com/khw7096/pandoc.git
 cd pandoc
