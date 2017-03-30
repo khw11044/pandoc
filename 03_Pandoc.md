@@ -22,3 +22,18 @@ brew가 없다면 [https://brew.sh/index_ko.html](https://brew.sh/index_ko.html)
 
 	# yum install pandoc
 
+#### 설치완료
+Pandoc의 설치가 완료되면 터미널에서 아래처럼 타이핑합니다.
+
+	$ pandoc --version
+
+설치된 Pandoc의 버전정보가 잘 출력되는 지 확인합니다.
+
+	pandoc 1.19.2.1
+	Compiled with pandoc-types 1.17.0.5, texmath 0.9, skylighting 0.1.1.4
+	Default user data directory: /Users/kimhanwoong/.pandoc
+	Copyright (C) 2006-2016 John MacFarlane
+	Web:  http://pandoc.org
+	This is free software; see the source for copying conditions.
+	There is no warranty, not even for merchantability or fitness
+	for a particular purpose.
