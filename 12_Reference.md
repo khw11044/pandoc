@@ -37,7 +37,9 @@ PostScript는 문서를 프린팅하기 위한 페이지 기술 언어중 하나
 	Groff (GNU troff) is a typesetting system that reads plain text mixed with formatting commands and produces formatted output.
 
 
-inputfile을 이용해서 PostScript 파일을 생성해보겠습니다. 한글을 사용하면 텍스트가 깨집니다.
+inputfile을 이용해서 PostScript 파일을 생성해보겠습니다.
+기본적으로 한글을 사용하면 텍스트가 깨집니다.
+추가적으로 셋팅을 하면 한글의 사용이 가능하지만 Pandoc보다는 모든 면에서 번거롭습니다.
 터미널을 띄우고 아래 명령을 타이핑하면 output.ps가 생성됩니다.
 
 	$ groff inputfile > output.ps
