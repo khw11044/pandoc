@@ -1,5 +1,10 @@
-FILENAME = pandoc
+# 책이름
+BOOK = pandoc
+
+# 문서가 생성될 경로
 EXPORT_DIR = publish
+
+# 책의 내용
 CONTENTS = title.txt \
 	01_Preface.md \
 	02_Introduction.md \
@@ -22,28 +27,28 @@ pdf: makedir
 	pandoc --toc -S --epub-chapter-level 2 \
 	--webtex -t latex --latex-engine=xelatex \
 	--variable mainfont='Nanum Myeongjo' \
-	-o $(EXPORT_DIR)/$(FILENAME).pdf \
+	-o $(EXPORT_DIR)/$(BOOK).pdf \
 	$(CONTENTS)
 epub: makedir
 	pandoc --toc -S --epub-chapter-level 2 \
 	--epub-stylesheet style.css \
 	--epub-cover-image figures/cover_600x800.jpg \
 	--webtex -t epub3 \
-	-o $(EXPORT_DIR)/$(FILENAME).epub \
+	-o $(EXPORT_DIR)/$(BOOK).epub \
 	$(CONTENTS)
 docx: makedir
 	pandoc --toc -S --webtex -t docx \
-	-o $(EXPORT_DIR)/$(FILENAME).docx \
+	-o $(EXPORT_DIR)/$(BOOK).docx \
 	$(CONTENTS)
 odt: makedir
 	pandoc --toc -S -t odt \
-	-o $(EXPORT_DIR)/$(FILENAME).odt \
+	-o $(EXPORT_DIR)/$(BOOK).odt \
 	$(CONTENTS)
 html: makedir
 	cp -rf figures $(EXPORT_DIR)
 	cp -f style.css $(EXPORT_DIR)
 	pandoc -s -S --toc -c style.css \
-	-o $(EXPORT_DIR)/$(FILENAME).html \
+	-o $(EXPORT_DIR)/$(BOOK).html \
 	$(CONTENTS)
 all: pdf epub docx odt html
 clean:
