@@ -118,7 +118,7 @@ MathML은 여러분이 사용하는 브라우저가 지원할 수도 있고 지�
 
 ![mathml_example](figures/mathml_example.png?raw=true)
 
-위 수식에 해당하는 MathML의 문법입니다.
+2차방정식에 대한 근의 공식에 해당하는 MathML의 문법입니다.
 
     <math>
     <mi>x</mi>
