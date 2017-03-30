@@ -44,29 +44,118 @@ inputfile을 이용해서 PostScript 파일을 생성해보겠습니다. 한글�
 
 
 ## Make
+make는 파일을 쉽게 관리 유틸리티 입니다.
+굉장히 추상적인 문장입니다.
+구체적인 상황을 생각해 보겠습니다.
+그림을 그리려면 물감과 붓이 필요합니다. 물감과 붓이 없다면 구입해야합니다.
+만약 물감과 붓을 이미 가지고 있다면 구입할 필요는 없습니다.
+물감과 붓은 그림을 그리는 행동에 대한 필요 조건입니다.
+우리가 행동할 행위들을 또는 필요조건들 옵션들을 Makefile 파일에 잘 작성하면
+make가 필요조건들을 파악하고 Makefile에 적힌 대로 업무를 잘 진행해줍니다.
+쉽게 자동화 할 수 있습니다.
 
-동시에 여러 타입의 문서로 생성하는 코드입니다.
-make pdf
-make epub
-make html
-make docx
-make odt
-make all
-make clean
+이러한 특징을 가지고 있는 make명령어를 문서를 제작할 때도 사용할 수 있습니다.
+마크다운 문서를 이용해서 여러타입의 문서로 변환해야할 때 Makefile을 만들어 두면 편리합니다.
+이전 장에서 publish.sh 파일을 다루어서 epub을 쉽게 제작하는 방법을 잠깐 소개했습니다.
+하지만 규모가 있는 문서작업에서 저는 Makefile을 작성하는 방식을 더 선호합니다.
+아래는 예제로 나열한 make 명령어는 제가 Makefile 작성하고 어떻게 사용하는지 사용법을 먼저 다룹니다.
+그리고 다음 챕터에서 실제로 구현된 Makefile을 설명하겠습니다.
 
-#### Make 파일 작성법
+pdf를 생성합니다.
 
-	EXPORT_DIR = publish
-	EPUB := $(patsubst %.md,%.epub,$(wildcard *.md))
-	all: $(addprefix $(EXPORT_DIR)/, $(EPUB))
-	$(EXPORT_DIR) :
-		mkdir -p $@
+	$ make pdf
+
+epub 문서를 생성합니다.
+
+	$ make epub
+
+html 문서를 생성합니다.
+
+	$ make html
+
+docx 문서를 생성합니다.
+
+	$ make docx
+
+odt 문서를 생성합니다.
+
+	$ make odt
+
+pdf와 epub문서를 생성합니다.
+
+	$ make pdf epub
+
+위에 나열된 모든 문서를 생성합니다.
 	
-	$(EXPORT_DIR)/%.epub : %.md $(EXPORT_DIR)
-		pandoc $< -o $@ -s
+	$ make all
+
+문서가 생성된 경로를 삭제합니다.
 	
+	$ make clean
+
+#### Makefile 작성법
+위에서 다룬 간단한 명령어들이 작동되기 위해서 Makefile을 작성할 필요가 있습니다.
+Makefile을 작성하면 Pandoc을 이용해서 여러 타입의 문서를 자동 생성할 수 있습니다.
+Makefile을 작성할 때는 반드시 Tab을 이용해서 들여쓰기를 해야합니다.
+아래는 적힌 예제 코드는 위 기능이 동작하는 실제 Makefile 코드입니다.
+Makefile은 예민합니다. 오류가 있다면 make 명령어가 작동되지 않습니다.
+아래 코드는 리눅스와 맥에서 테스트가 되었습니다. 윈도우즈에서는 작동되지 않을 수 있습니다.
+
+	FILENAME = pandoc         // 파일명
+	EXPORT_DIR = publish      // 문서가 생성될 폴더명
+	CONTENTS = title.txt \    // title 파일과 md파일
+		01_Preface.md \
+		02_Introduction.md \
+		03_Pandoc.md \
+		04_Markdown.md \
+		05_Epub.md \
+		06_Create.md \
+		07_Image.md \
+		08_Cover.md \
+		09_PandocArgv.md \
+		10_Math.md \
+		11_Style_Metadata.md \
+		12_Reference.md \
+		13_OpenSource.md \
+		14_Epilogue.md
+
+	makedir:
+		mkdir -p $(EXPORT_DIR)
+	pdf: makedir
+		pandoc --toc -S --epub-chapter-level 2 \
+		--webtex -t latex --latex-engine=xelatex \
+		--variable mainfont='Nanum Myeongjo' \
+		-o $(EXPORT_DIR)/$(FILENAME).pdf \
+		$(CONTENTS)
+	epub: makedir
+		pandoc --toc -S --epub-chapter-level 2 \
+		--epub-stylesheet style.css \
+		--epub-cover-image figures/cover_600x800.jpg \
+		--webtex -t epub3 \
+		-o $(EXPORT_DIR)/$(FILENAME).epub \
+		$(CONTENTS)
+	docx: makedir
+		pandoc --toc -S --webtex -t docx \
+		-o $(EXPORT_DIR)/$(FILENAME).docx \
+		$(CONTENTS)
+	odt: makedir
+		pandoc --toc -S -t odt \
+		-o $(EXPORT_DIR)/$(FILENAME).odt \
+		$(CONTENTS)
+	html: makedir
+		cp -rf figures $(EXPORT_DIR)
+		cp -f style.css $(EXPORT_DIR)
+		pandoc -s -S --toc -c style.css \
+		-o $(EXPORT_DIR)/$(FILENAME).html \
+		$(CONTENTS)
+	all: pdf epub docx odt html
 	clean:
 		rm -rf $(EXPORT_DIR)
+
+저는 위에 작성된 Makefile 형태를 가장 많이 사용합니다.
+누군가가 "pdf로 문서를 부탁해~" 라고 하면 make pdf 라고 타이핑 하면됩니다.
+상사가 "docx로 문서를 부탁해~" 라고 하면 make docx라고 타이핑 하면되죠.
+이 유연한 방법은 분명 여러분 문서의 수명을 늘려줄겁니다.
 
 ## Grip
 Grip 명령어는 마크다운 문서를 웹서버로 바꾸어주는 유틸리티입니다.
