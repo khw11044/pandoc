@@ -2,12 +2,12 @@
 body { margin: 5%; text-align: justify; font-size: 0.9em; }
 code {
 	display: block;
-	font-family: monospace;
+	font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace;
 	background-color: #F1F1F1;
 	margin: 1em;
 	padding: 1em;
 	border-radius: 0.4em;
-	font-size: 0.9em;
+	font-size: 0.8em;
 }
 h1 { text-align: left; font-size: 2.5em;}
 h2 { text-align: left; font-size: 1.5em;}
@@ -39,4 +39,28 @@ blockquote > :first-child {
 }
 blockquote > :last-child {
 	margin-bottom: 0;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    border-spacing: 0;
+    border-bottom: 2px solid #a8b2bf;
+    border-top: 2px solid #a8b2bf;
+}
+table th {
+    padding: 3px 10px;
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #a8b2bf;
+}
+table td {
+    padding: 3px 10px;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
 }
