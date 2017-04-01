@@ -22,50 +22,185 @@ MacTex 설치후 LaTexIt을 이용하면 미리결과를 보면서 LaTex문법�
 - 다운로드사이트 : http://www.tug.org/mactex/mactex-download.html
 
 ## LaTex문법
-이 챕터에서는 LaTex의 문법을 배워보겠습니다.
+저는 수학에 사용하는 기호들도 하나의 언어라고 생각합니다.
+한국어 또는 영어처럼 수학도 그 세계를 잘 표현하기 위해서 기호를 약속하고 사용합니다.
+처음에 보면 분명 외계어처럼 보이지만, 다른 언어들 처럼 자신이 사용할 만큼만 배워서 사용하면 된다고 생각합니다.
+
+이 챕터에서는 컴퓨터로 수학기호를 표현할 수 있는 LaTex의 수식표현 문법을 배워보겠습니다.
 이 책은 Pandoc책이지만 Pandoc 만큼이나 LaTex를 조금 자세히 다루어 보는 책 입니다.
-책을 쓰다보면 LaTex를 잘 다루고 있는 자료를 찾기위해서 매번 인터넷을 해메이기 때문입니다.
-이 장은 목차에서 쉽게 찾아서 사용할 수 있도록 제목의 # 갯수가 3개 입니다.
+수학기호를 책에 넣기위해서 노력하다 보면 LaTex를 잘 다루고 있는 자료를 찾기위해서 매번 인터넷을 해메이기 때문입니다.
 
 ### 4칙연산
 
+덧셈에 대한 표현입니다. 우리가 사용하는 표현과 크게 다르지 않습니다.
+
+$1 + 1 = 2$
+
+```
+1 + 1 = 2
+```
+
+뺄셈의 표현
+
+$2 - 1 = 1$
+
+```
+2 - 1 = 1
+```
+
+곱셈의 표현
+
+$2 \times 2 = 4$
+
+```
+2 \times 2 = 4
+```
+
+나눗셈의 표현
+
+$4 \div 2 = 2$
+
+```
+4 \div 2 = 2
+```
+
 ### 괄호, 중괄호, 대괄호
+LaTex에서 괄호를 사용하는 방법을 배워보겠습니다.
+
+소괄호
+
+$(1+2)$
+
+```
+(1+2)
+```
+
+중괄호
+
+$\{1+2\}$
+
+```
+\{1+2\}
+```
+
+대괄호
+
+$[1+2]$
+
+```
+[1+2]
+```
 
 ### 분수
+분수 영어로는 fraction. LaTex에서는 약자로 frac이라는 문법을 사용합니다.
 
-### 지수
+$\frac{1}{2}$
+
+```
+\frac{1}{2}
+```
+
+
+### 지수, _
+
+$2^2=4$
+
+```
+2^2
+```
+
+$2_2$
 
 ### 루트
+루트. square root의 약자로 sqrt 라고 사용합니다.
+
+$\sqrt{2}$
+
+```
+\sqrt{2}
+```
 
 ### 정의
 
 ### 펙토리얼
+$n!$
+
+$n! = 1 \times 2 \times 3 \times \ldots n$
+
+$n! = \prod_{k=1}^n k$
 
 ### 집합
 
 ### 부등식
 
-### 싸인, 코싸인, 탄젠트, 세타
+### 삼각함수, 싸인, 코싸인, 탄젠트, 세타
+$\cos (2\theta) = \cos^2 \theta - \sin^2 \theta$
 
 ### 파이
+$\pi$
+
+$\Pi$
+
+$\phi$
 
 ### 닷
+$\dots$
+
+$\ldots$
+
+$\cdots$
+
+$\vdots$
+
+$\ddots$
 
 ### 각도
+90도
+
+$90^\circ$
 
 ### 극한, lim
+$\lim_{x \to \infty} \exp(-x) = 0$
 
 ### 시그마,for
+$\sum_{i=1}^{10} t_i$
+
+$\displaystyle\sum_{i=1}^{10} t_i$
 
 ### 로그
-
+```
+\log_b a
+```
 ### 미분
+```
+$\dv{Q}{t} = \dv{s}{t}$
+```
 
 ### 적분, integral
+$\int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x$
+$\int\limits_a^b$
+
+### 행렬
+$A_{m,n} = 
+ \begin{pmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+ \end{pmatrix}$
 
 ### 벡터, 스칼라
+$\overrightarrow{AB}$
 
-### 삼각형
+$\overline{AB}$
+
+### 선그리기
+
+$\setlength{\unitlength}{3cm}
+\begin{picture}(1,1)
+\put(0,0){\line(1,0){1}}
+\put(0,0){\line(0,1){1}}
+\end{picture}$
 
 ### 좌표그리기
 
@@ -87,18 +222,21 @@ MacTex 설치후 LaTexIt을 이용하면 미리결과를 보면서 LaTex문법�
 ## WebTex
 LaTex는 종이 인쇄물 기반의 기술입니다. 현대 과학의 대부분의 정보는 Web으로 표기됩니다.
 WebTex 프로젝트는 LaTex를 html문서로 문제없이 컴파일 하는 것을 목표로 두고 있습니다.
-문법은 LaTex와 거의 같습니다. 오직 epub 만을 제작하는 상황이라면 WebTex를 사용하는것은 좋은 방법입니다.
+문법은 LaTex와 거의 같습니다.
 만약 여러분이 마크다운에서 WebTex 문법을 사용했다면 epub 파일을 제작할 때 아래 옵션을 추가해주면 됩니다.
 
 	--webtex
 
 WebTex 문법은 "$수식$" 형태로 구성되어 있습니다.
 
-    $f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n$
+```
+f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n
+```
 
 위 문장이 문제없이 잘 처리되었다면 epub문서에 아래와 같은 수식이 그려집니다.
 
-![latex_example](figures/latex_example.png?raw=true)
+$f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n$
+
 
 #### 참고자료
 - 프로젝트 사이트 : [http://pkgw.github.io/webtex/](http://pkgw.github.io/webtex/)
