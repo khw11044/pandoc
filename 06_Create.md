@@ -76,6 +76,9 @@ LaTex도 여러 버전의 엔진이 있으며 Pandoc에 PDF 처리시 선택할 
 pdfLaTex,luaLaTex,xeLaTex가 있습니다. 
 엔진들중 유니코드와 최신 폰트 처리에는 xeLaTex가 좋습니다.
 macOS에서 xeLaTex를 사용하기 위해서는 macTex를 설치해야 합니다.
+설치를 하고 PATH환경변수에 아래줄이 추가되어야 xeLaTex가 잘 작동합니다.
+
+	export PATH=/Library/TeX/texbin:$PATH
 
 Pandoc은 내부적으로 문서를 LaTex로 변환하고 이후 LaTex Engine을 통해서 PDF가 생성되는 형태입니다.
 
