@@ -284,7 +284,7 @@ $A_{m,n} =
   a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
  \end{pmatrix}$
 
-### 벡터, 스칼라 / Vector, Scala
+### 벡터, 스칼라 / Vector, Scalar
 $\overrightarrow{AB}$
 
 $\overline{AB}$
