@@ -40,3 +40,15 @@ Svg이미지를 Png로 변환해야할 때 사용합니다.
 
 ### macTex
 macOS에서 LaTex를 작성할 때 사용합니다.
+
+### Epubcheck
+epub파일을 디버그해야할 때가 있습니다.
+에러사항을 관찰하고 디버그할 때 사용하는 오픈소스를 소개합니다.
+Java가 설치되어있어야 합니다.
+아래 사이트에서 releases된 버전의 epubcheck 파일을 다운받습니다.
+
+https://github.com/IDPF/epubcheck
+
+아래 명령을 이용해서 디버그합니다.
+
+	$ java -jar epubcheck.jar test.epub
