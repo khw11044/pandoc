@@ -35,6 +35,7 @@ SVG 포멧은 아래 소개될 특징들이 있어서 개인적으로 선호하�
 - 사용방법
 	
 	$ guetzli origin.jpg output.jpg
+	$ guetzli origin.jpg origin.jpg # 같은 파일로 덮어쓰기 가능.
 
 ## Tip
 #### SVG to PNG
