@@ -329,7 +329,7 @@ $\setlength{\unitlength}{3cm}
 ```
 
 ### 논문에 자주 나오는 기호
-
+- 오메가 : \omega
 
 #### LaTex 참고자료
 아래 링크를 참고하시면 더 많은 LaTex정보를 보실 수 있습니다.
