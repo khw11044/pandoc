@@ -64,7 +64,7 @@ PDF파일을 생성하는 예제는 아래와 같습니다.
 
 	pandoc -f markdown -t latex \
 	-s -o document.pdf \
-	--latex-engine=xelatex \
+	--pdf-engine=xelatex \
 	--variable mainfont='Nanum Myeongjo' \
 	document.md
 

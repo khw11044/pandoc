@@ -25,7 +25,7 @@ makedir:
 	mkdir -p $(EXPORT_DIR)
 pdf: makedir
 	pandoc --toc -S --epub-chapter-level 2 \
-	--webtex -t latex --latex-engine=xelatex \
+	--webtex -t latex --pdf-engine=xelatex \
 	--variable mainfont='Nanum Myeongjo' \
 	-c style.css \
 	-o $(EXPORT_DIR)/$(BOOK).pdf \

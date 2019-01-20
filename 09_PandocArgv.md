@@ -53,7 +53,7 @@ output 파일.
 머릿말과 꼬릿말을 사용하여 문서를 제작합니다.
 pdf, epub, epub3, fb2, docx, odt 문서에 대해서 자동으로 설정됩니다.
 
-#### --latex-engine
+#### --pdf-engine
 기본설정은 pdflatex 엔진입니다. 이 엔진은 유니코드 처리시 문제가 많습니다.
 최신 폰트를 지원하거나 한글을 사용할 때는 xelatex라는 엔진을 더 많이 사용합니다.
 

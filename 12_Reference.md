@@ -135,7 +135,7 @@ Makefile은 예민합니다. 오류가 조금이라도 존재하면 make 명령�
 		mkdir -p $(EXPORT_DIR)
 	pdf: makedir
 		pandoc --toc -S --epub-chapter-level 2 \
-		--webtex -t latex --latex-engine=xelatex \
+		--webtex -t latex --pdf-engine=xelatex \
 		--variable mainfont='Nanum Myeongjo' \
 		-o $(EXPORT_DIR)/$(FILENAME).pdf \
 		$(CONTENTS)
